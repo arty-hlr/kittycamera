@@ -24,7 +24,7 @@ def login():
 
 @app.route('/video_stream')
 def video_stream():
-    return redirect('http://'+credentials.stream_user+:credentials.stream_password+'@www.kittycamera.live:8081')
+    return redirect('http://'+credentials.stream_user+':'+credentials.stream_password+'@www.kittycamera.live:8081')
 
 @app.route('/pan_left')
 def pan_left():
