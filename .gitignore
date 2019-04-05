@@ -1,0 +1,4 @@
+*.sock
+*.ini
+credentials.py
+__pycache__/*

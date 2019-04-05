@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Live streaming</title>
+        <link rel="stylesheet" href'../static/style.css'/>
+    </head>
+    <body>
+        <h1>Kitty surveillance live streaming</h1>
+        <h3><img src="{{ url_for('video_stream')  }}"</h3>
+        <h3>
+            <button onclick="pan_left()">LEFT</button>
+            <button onclick="pan_right()">RIGHT</button>
+            <button onclick="pan_zero()">ZERO</button>
+        </h3> 
+        <h3>
+            <button onclick="tilt_down()">DOWN</button>
+            <button onclick="tilt_up()">UP</button>
+            <button onclick="tilt_zero()">ZERO</button>
+        </h3> 
+        <hr>
+        <p> 2019 Developed by Florian Poujade</p>
+
+<script>
+var xmlhttp;
+xmlhttp=new XMLHttpRequest();
+function pan_left()
+{
+    xmlhttp.open("GET","pan_left",true);
+    xmlhttp.send();
+}
+function pan_right()
+{
+    xmlhttp.open("GET","pan_right",true);
+    xmlhttp.send();
+}
+function pan_zero()
+{
+    xmlhttp.open("GET","pan_zero",true);
+    xmlhttp.send();
+}
+function tilt_down()
+{
+    xmlhttp.open("GET","tilt_down",true);
+    xmlhttp.send();
+}
+function tilt_up()
+{
+    xmlhttp.open("GET","tilt_up",true);
+    xmlhttp.send();
+}
+function tilt_zero()
+{
+    xmlhttp.open("GET","tilt_zero",true);
+    xmlhttp.send();
+}
+</script>
+    </body>
+</html>
+
