@@ -5,3 +5,7 @@ Mobile camera that used a raspberry pi 3 to control the angle of the camera ([pa
 The camera used to be available at [](www.kittycamera.live) when I had port forwarding set up on my home router in my last flat, with authentication to access the camera feed and control the pan-tilt hat.
 
 Posted here archived as I will probably not use this project anymore. I left the commits that I naively made to "delete" the credentials file as a reminder of proper and secure coding and git management practice (learned that with HTB's Craft haha).
+
+# TO DO
+
++ Add photo of the camera on the pi
